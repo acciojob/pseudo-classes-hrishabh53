@@ -1,27 +1,71 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Webpage</title>
+  <style>
+    /* Set background color for the entire page */
+    :root {
+      background-color: rgb(135, 206, 235);
+    }
 
+    /* Styling for the article */
+    article p:first-child {
+      color: white;
+      background-color: black;
+    }
+
+    article p:nth-child(2) {
+      color: black; /* Default text color */
+    }
+
+    article p:last-child {
+      color: red;
+    }
+
+    /* Styling for the unordered list */
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      background-color: gray;
+      width: 50%;
+      padding: 10px;
+    }
+
+    ul li:nth-child(odd) {
+      background-color: white;
+    }
+
+    ul li:first-child, ul li:last-child {
+      font-size: 22px;
+    }
+
+    ul li:nth-child(3) {
+      background-color: pink;
+    }
+  </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-	<p>First paragraph</p>
-	<p>Lorem psum dolor sit amet, comectetuer adipscing eit Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penattus et magnis dis parturient monte</p>
-	<p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras daptibus. Vivamus elementum semper nisi. Aenean vulputate elefiend tellus.Aenean leo ligula, porttitor eu</p>
-	<p>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc blandit vel nunc,</p>
-	<ul>
-		<li>First item</li>
-		<li>Second item</li>
-		<li>Third item</li>
-		<li>Fourth item</li>
-		<li>Fifth item</li>
-	</ul>
-    <script type="text/javascript" src="./script.js">
-</script>
+
+  <!-- Article with three paragraphs -->
+  <article>
+    <p>This is the first paragraph.</p>
+    <p>This is the second paragraph.</p>
+    <p>This is the third paragraph.</p>
+  </article>
+
+  <!-- Unordered list with 5 items -->
+  <ul>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+    <li>Fourth item</li>
+    <li>Fifth item</li>
+  </ul>
 
 </body>
-
 </html>
